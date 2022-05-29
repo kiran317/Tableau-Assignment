@@ -1,0 +1,2764 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.22.0420.0846                               -->
+<workbook original-version='18.1' source-build='2020.4.17 (20204.22.0420.0846)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Orders (Superstore_USA)' inline='true' name='federated.1ef05tc1yg3aw90zpgfwe1kop466' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Superstore_USA' name='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/91720/Downloads/Superstore_USA.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:X9427:no:A1:X9427:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order Priority' ordinal='1' />
+            <column datatype='real' name='Discount' ordinal='2' />
+            <column datatype='real' name='Unit Price' ordinal='3' />
+            <column datatype='real' name='Shipping Cost' ordinal='4' />
+            <column datatype='integer' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Ship Mode' ordinal='7' />
+            <column datatype='string' name='Customer Segment' ordinal='8' />
+            <column datatype='string' name='Product Category' ordinal='9' />
+            <column datatype='string' name='Product Sub-Category' ordinal='10' />
+            <column datatype='string' name='Product Container' ordinal='11' />
+            <column datatype='string' name='Product Name' ordinal='12' />
+            <column datatype='real' name='Product Base Margin' ordinal='13' />
+            <column datatype='string' name='Region' ordinal='14' />
+            <column datatype='string' name='State or Province' ordinal='15' />
+            <column datatype='string' name='City' ordinal='16' />
+            <column datatype='integer' name='Postal Code' ordinal='17' />
+            <column datatype='date' name='Order Date' ordinal='18' />
+            <column datatype='date' name='Ship Date' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+            <column datatype='integer' name='Quantity ordered new' ordinal='21' />
+            <column datatype='real' name='Sales' ordinal='22' />
+            <column datatype='integer' name='Order ID' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Orders' table='[Orders$]' type='table'>
+            <columns gridOrigin='A1:X9427:no:A1:X9427:0' header='yes' outcome='2'>
+              <column datatype='integer' name='Row ID' ordinal='0' />
+              <column datatype='string' name='Order Priority' ordinal='1' />
+              <column datatype='real' name='Discount' ordinal='2' />
+              <column datatype='real' name='Unit Price' ordinal='3' />
+              <column datatype='real' name='Shipping Cost' ordinal='4' />
+              <column datatype='integer' name='Customer ID' ordinal='5' />
+              <column datatype='string' name='Customer Name' ordinal='6' />
+              <column datatype='string' name='Ship Mode' ordinal='7' />
+              <column datatype='string' name='Customer Segment' ordinal='8' />
+              <column datatype='string' name='Product Category' ordinal='9' />
+              <column datatype='string' name='Product Sub-Category' ordinal='10' />
+              <column datatype='string' name='Product Container' ordinal='11' />
+              <column datatype='string' name='Product Name' ordinal='12' />
+              <column datatype='real' name='Product Base Margin' ordinal='13' />
+              <column datatype='string' name='Region' ordinal='14' />
+              <column datatype='string' name='State or Province' ordinal='15' />
+              <column datatype='string' name='City' ordinal='16' />
+              <column datatype='integer' name='Postal Code' ordinal='17' />
+              <column datatype='date' name='Order Date' ordinal='18' />
+              <column datatype='date' name='Ship Date' ordinal='19' />
+              <column datatype='real' name='Profit' ordinal='20' />
+              <column datatype='integer' name='Quantity ordered new' ordinal='21' />
+              <column datatype='real' name='Sales' ordinal='22' />
+              <column datatype='integer' name='Order ID' ordinal='23' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Returns' table='[Returns$]' type='table'>
+            <columns gridOrigin='A1:B1635:no:A1:B1635:0' header='yes' outcome='2'>
+              <column datatype='integer' name='Order ID' ordinal='0' />
+              <column datatype='string' name='Status' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Users' table='[Users$]' type='table'>
+            <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+              <column datatype='string' name='Region' ordinal='0' />
+              <column datatype='string' name='Manager' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[City]' value='[Orders].[City]' />
+          <map key='[Customer ID]' value='[Orders].[Customer ID]' />
+          <map key='[Customer Name]' value='[Orders].[Customer Name]' />
+          <map key='[Customer Segment]' value='[Orders].[Customer Segment]' />
+          <map key='[Discount]' value='[Orders].[Discount]' />
+          <map key='[Manager]' value='[Users].[Manager]' />
+          <map key='[Order Date]' value='[Orders].[Order Date]' />
+          <map key='[Order ID (Returns)]' value='[Returns].[Order ID]' />
+          <map key='[Order ID]' value='[Orders].[Order ID]' />
+          <map key='[Order Priority]' value='[Orders].[Order Priority]' />
+          <map key='[Postal Code]' value='[Orders].[Postal Code]' />
+          <map key='[Product Base Margin]' value='[Orders].[Product Base Margin]' />
+          <map key='[Product Category]' value='[Orders].[Product Category]' />
+          <map key='[Product Container]' value='[Orders].[Product Container]' />
+          <map key='[Product Name]' value='[Orders].[Product Name]' />
+          <map key='[Product Sub-Category]' value='[Orders].[Product Sub-Category]' />
+          <map key='[Profit]' value='[Orders].[Profit]' />
+          <map key='[Quantity ordered new]' value='[Orders].[Quantity ordered new]' />
+          <map key='[Region (Users)]' value='[Users].[Region]' />
+          <map key='[Region]' value='[Orders].[Region]' />
+          <map key='[Row ID]' value='[Orders].[Row ID]' />
+          <map key='[Sales]' value='[Orders].[Sales]' />
+          <map key='[Ship Date]' value='[Orders].[Ship Date]' />
+          <map key='[Ship Mode]' value='[Orders].[Ship Mode]' />
+          <map key='[Shipping Cost]' value='[Orders].[Shipping Cost]' />
+          <map key='[State or Province]' value='[Orders].[State or Province]' />
+          <map key='[Status]' value='[Returns].[Status]' />
+          <map key='[Unit Price]' value='[Orders].[Unit Price]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X9427:no:A1:X9427:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B1635:no:A1:B1635:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Users]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Priority</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order Priority]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Priority</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit Price]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Unit Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shipping Cost]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Shipping Cost</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Segment</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Sub-Category</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Container</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Container]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Container</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Base Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Product Base Margin]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Base Margin</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State or Province</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State or Province]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State or Province</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity ordered new</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity ordered new]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity ordered new</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order ID (Returns)]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_57E7FE1795974E93B0B74923553A202B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_57E7FE1795974E93B0B74923553A202B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region (Users)]</local-name>
+            <parent-name>[Users]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Users_6BD65B58372E49A2943A0AAA37360D03]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manager</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Manager]</local-name>
+            <parent-name>[Users]</parent-name>
+            <remote-alias>Manager</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Users_6BD65B58372E49A2943A0AAA37360D03]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Customer ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Order ID (Returns)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+      <column aggregate-role-from='[City]' aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+      <column aggregate-role-from='[City]' datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column aggregate-role-from='[City]' datatype='string' name='[State or Province]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_8465D3F2B74D4CADA4ADDFD03B05F18D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Returns' datatype='table' name='[__tableau_internal_object_id__].[Returns_57E7FE1795974E93B0B74923553A202B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Users' datatype='table' name='[__tableau_internal_object_id__].[Users_6BD65B58372E49A2943A0AAA37360D03]' role='measure' type='quantitative' />
+      <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product Name]' derivation='None' name='[none:Product Name:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Product Category,Product Name)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Product Category:nk]' />
+          <groupfilter function='level-members' level='[none:Product Name:nk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Product details'>
+          <field>[Product Category]</field>
+          <field>[Product Sub-Category]</field>
+          <field>[Product Name]</field>
+        </drill-path>
+        <drill-path name='State or Province, City'>
+          <field>[Region]</field>
+          <field>[State or Province]</field>
+          <field>[City]</field>
+          <field>[Postal Code]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_8465D3F2B74D4CADA4ADDFD03B05F18D'>
+            <properties context=''>
+              <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:X9427:no:A1:X9427:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order Priority' ordinal='1' />
+                  <column datatype='real' name='Discount' ordinal='2' />
+                  <column datatype='real' name='Unit Price' ordinal='3' />
+                  <column datatype='real' name='Shipping Cost' ordinal='4' />
+                  <column datatype='integer' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Ship Mode' ordinal='7' />
+                  <column datatype='string' name='Customer Segment' ordinal='8' />
+                  <column datatype='string' name='Product Category' ordinal='9' />
+                  <column datatype='string' name='Product Sub-Category' ordinal='10' />
+                  <column datatype='string' name='Product Container' ordinal='11' />
+                  <column datatype='string' name='Product Name' ordinal='12' />
+                  <column datatype='real' name='Product Base Margin' ordinal='13' />
+                  <column datatype='string' name='Region' ordinal='14' />
+                  <column datatype='string' name='State or Province' ordinal='15' />
+                  <column datatype='string' name='City' ordinal='16' />
+                  <column datatype='integer' name='Postal Code' ordinal='17' />
+                  <column datatype='date' name='Order Date' ordinal='18' />
+                  <column datatype='date' name='Ship Date' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                  <column datatype='integer' name='Quantity ordered new' ordinal='21' />
+                  <column datatype='real' name='Sales' ordinal='22' />
+                  <column datatype='integer' name='Order ID' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Returns' id='Returns_57E7FE1795974E93B0B74923553A202B'>
+            <properties context=''>
+              <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Returns' table='[Returns$]' type='table'>
+                <columns gridOrigin='A1:B1635:no:A1:B1635:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Order ID' ordinal='0' />
+                  <column datatype='string' name='Status' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Users' id='Users_6BD65B58372E49A2943A0AAA37360D03'>
+            <properties context=''>
+              <relation connection='excel-direct.0fta3cm0r2ouvg1gfe27n0ejv70j' name='Users' table='[Users$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='string' name='Manager' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Order ID]' />
+              <expression op='[Order ID (Returns)]' />
+            </expression>
+            <first-end-point object-id='Orders_8465D3F2B74D4CADA4ADDFD03B05F18D' />
+            <second-end-point object-id='Returns_57E7FE1795974E93B0B74923553A202B' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Region]' />
+              <expression op='[Region (Users)]' />
+            </expression>
+            <first-end-point object-id='Orders_8465D3F2B74D4CADA4ADDFD03B05F18D' />
+            <second-end-point object-id='Users_6BD65B58372E49A2943A0AAA37360D03' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Superstore_USA)' name='federated.1ef05tc1yg3aw90zpgfwe1kop466' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ef05tc1yg3aw90zpgfwe1kop466'>
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Name]' derivation='None' name='[none:Product Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ef05tc1yg3aw90zpgfwe1kop466].[Exclusions (Product Category,Product Name)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Product Category:nk]' />
+                <groupfilter function='level-members' level='[none:Product Name:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Product Category:nk]' member='&quot;Furniture&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Global Troy™ Executive Leather Low-Back Tilter&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[Exclusions (Product Category,Product Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]' />
+              <lod column='[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</rows>
+        <cols>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{5F81FF5F-192B-406F-A654-7285EDC0A62F}' />
+    </worksheet>
+    <worksheet name='TOP 10 sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Superstore_USA)' name='federated.1ef05tc1yg3aw90zpgfwe1kop466' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ef05tc1yg3aw90zpgfwe1kop466'>
+            <column datatype='string' name='[Product Sub-Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product Sub-Category]' derivation='None' name='[none:Product Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Sub-Category:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Product Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</rows>
+        <cols>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Sub-Category:nk]</cols>
+      </table>
+      <simple-id uuid='{A6738675-C1A8-4E55-9938-6BD8DC46754E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Sharp AL-1530CS Digital Copier&quot;</value>
+                <value>11490.9998</value>
+                <value>86057.240000000005</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Polycom VoiceStation 100&quot;</value>
+                <value>14798.2932</value>
+                <value>36954.080000000002</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Polycom ViewStation™ Adapter H323 Videoconferencing Unit&quot;</value>
+                <value>-7374.1956439999994</value>
+                <value>36437.910000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Panasonic KX-P1150 Dot Matrix Printer&quot;</value>
+                <value>9587.3376239999998</value>
+                <value>40363.230000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Panasonic KX-P1131 Dot Matrix Printer&quot;</value>
+                <value>12021.333524000001</value>
+                <value>40753.800000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Okidata ML591 Wide Format Dot Matrix Printer&quot;</value>
+                <value>11729.3618744</value>
+                <value>34375.849999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Okidata ML395C Color Dot Matrix Printer&quot;</value>
+                <value>4892.972099999999</value>
+                <value>50347.150000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Okidata ML390 Turbo Dot Matrix Printers&quot;</value>
+                <value>15328.40114</value>
+                <value>40712.870000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Okidata ML184 Turbo Dot Matrix Printers&quot;</value>
+                <value>19880.022199999996</value>
+                <value>40375.459999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Lexmark 4227 Plus Dot Matrix Printer&quot;</value>
+                <value>686.15104160000101</value>
+                <value>82415.169999999998</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Hewlett-Packard Deskjet 1220Cse Color Inkjet Printer&quot;</value>
+                <value>24782.747899999995</value>
+                <value>39231.200000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Hewlett-Packard cp1700 [D, PS] Series Color Inkjet Printers&quot;</value>
+                <value>33721.100200000001</value>
+                <value>102889.95000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Hewlett-Packard Business Color Inkjet 3000 [N, DTN] Series Printers&quot;</value>
+                <value>9869.5650599999972</value>
+                <value>49451.540000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Hewlett Packard LaserJet 3310 Copier&quot;</value>
+                <value>33712.303299999992</value>
+                <value>76114.959999999992</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Gyration Ultra Professional Cordless Optical Suite&quot;</value>
+                <value>13362.800399999996</value>
+                <value>54683.139999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Epson LQ-570e Dot Matrix Printer&quot;</value>
+                <value>12259.5569</value>
+                <value>33517.959999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Canon PC1080F Personal Copier&quot;</value>
+                <value>20916.460939999997</value>
+                <value>102932.76999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Canon PC1060 Personal Laser Copier&quot;</value>
+                <value>12042.294519999999</value>
+                <value>70236.279999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Canon PC940 Copier&quot;</value>
+                <value>28307.563489999993</value>
+                <value>80350.279999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Canon imageCLASS 2200 Advanced Copier&quot;</value>
+                <value>-5665.440459999998</value>
+                <value>107697.73000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Brother DCP1000 Digital 3 in 1 Multifunction Machine&quot;</value>
+                <value>4997.6618999999992</value>
+                <value>39995.279999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>&quot;Adesso Programmable 142-Key Keyboard&quot;</value>
+                <value>1240.6738599999996</value>
+                <value>54600.939999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Smead Adjustable Mobile File Trolley with Lockable Top&quot;</value>
+                <value>14364.814700000001</value>
+                <value>46430.75</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Sauder Facets Collection Locker/File Cabinet, Sky Alder Finish&quot;</value>
+                <value>1644.6849999999999</value>
+                <value>32846.279999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Sanyo Counter Height Refrigerator with Crisper, 3.6 Cubic Foot, Stainless Steel/Black&quot;</value>
+                <value>2395.1192000000001</value>
+                <value>40084.910000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Multimedia Mailers&quot;</value>
+                <value>20197.355200000002</value>
+                <value>59328.099999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Ibico Ibimaster 300 Manual Binding System&quot;</value>
+                <value>18505.671299999998</value>
+                <value>32732.490000000002</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Ibico Hi-Tech Manual Binding System&quot;</value>
+                <value>23080.56984</value>
+                <value>37992.690000000002</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Hoover WindTunnel™ Plus Canister Vacuum&quot;</value>
+                <value>14085.841899999999</value>
+                <value>39762.760000000002</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Honeywell Enviracaire Portable HEPA Air Cleaner for 17&apos; x 22&apos; Room&quot;</value>
+                <value>16033.086199999998</value>
+                <value>42691.729999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;GBC ProClick™ 150 Presentation Binding System&quot;</value>
+                <value>8497.9922000000006</value>
+                <value>34983.160000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;GBC DocuBind TL300 Electric Binding System&quot;</value>
+                <value>25033.896400000001</value>
+                <value>56379.779999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;GBC DocuBind 200 Manual Binding Machine&quot;</value>
+                <value>33892.328502999997</value>
+                <value>74547.380000000005</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Fellowes Staxonsteel® Drawer Files&quot;</value>
+                <value>7101.3447999999999</value>
+                <value>51987.849999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind&quot;</value>
+                <value>35909.525184999999</value>
+                <value>102656.45</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Fellowes PB300 Plastic Comb Binding Machine&quot;</value>
+                <value>19111.276249999999</value>
+                <value>43738.529999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Office Supplies&quot;</value>
+                <value>&quot;Economy Rollaway Files&quot;</value>
+                <value>13864.159700000002</value>
+                <value>43036.169999999998</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Tenex Contemporary Contur Chairmats for Low and Medium Pile Carpet, Computer, 39\&quot; x 49\&quot;&quot;</value>
+                <value>11291.6019</value>
+                <value>41674.390000000007</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;SAFCO PlanMaster Heigh-Adjustable Drafting Table Base, 43w x 30d x 30-37h, Black&quot;</value>
+                <value>9219.7435175999999</value>
+                <value>48988.939999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;SAFCO Folding Chair Trolley&quot;</value>
+                <value>14455.332200000001</value>
+                <value>42850.419999999998</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Office Star - Mid Back Dual function Ergonomic High Back Chair with 2-Way Adjustable Arms&quot;</value>
+                <value>10638.17914</value>
+                <value>53465.429999999986</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Office Star - Contemporary Task Swivel chair with 2-way adjustable arms, Plum&quot;</value>
+                <value>-7273.5314800000015</value>
+                <value>50662.369999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Luxo Professional Fluorescent Magnifier Lamp with Clamp-Mount Base&quot;</value>
+                <value>15528.2143</value>
+                <value>34056.490000000005</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Hon Multipurpose Stacking Arm Chairs&quot;</value>
+                <value>6042.6504400000003</value>
+                <value>75292.73000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Hon 94000 Series Round Tables&quot;</value>
+                <value>-2339.6901939200006</value>
+                <value>48347.709999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Hon 4700 Series Mobuis™ Mid-Back Task Chairs with Adjustable Arms&quot;</value>
+                <value>9199.6008000000002</value>
+                <value>45321.120000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Hon 4070 Series Pagoda™ Round Back Stacking Chairs&quot;</value>
+                <value>8375.9404999999988</value>
+                <value>33774.230000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Hon 2090 “Pillow Soft” Series Mid Back Swivel/Tilt Chairs&quot;</value>
+                <value>-2186.8637199999998</value>
+                <value>62752.639999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Global Leather Highback Executive Chair with Pneumatic Height Adjustment, Black&quot;</value>
+                <value>8406.3008000000009</value>
+                <value>40728.869999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Global Leather Executive Chair&quot;</value>
+                <value>7997.5735999999997</value>
+                <value>35765.839999999997</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Global Leather and Oak Executive Chair, Black&quot;</value>
+                <value>11834.731220000001</value>
+                <value>34977.409999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Global Adaptabilities™ Conference Tables&quot;</value>
+                <value>2126.8896712199999</value>
+                <value>32658.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Chromcraft Bull-Nose Wood Oval Conference Tables &amp; Bases&quot;</value>
+                <value>5241.8735962799983</value>
+                <value>38554.910000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Chromcraft Bull-Nose Wood 48\&quot; x 96\&quot; Rectangular Conference Tables&quot;</value>
+                <value>-6803.3040417560005</value>
+                <value>92208.460000000006</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Chromcraft 48\&quot; x 96\&quot; Racetrack Double Pedestal Table&quot;</value>
+                <value>3610.3282369599997</value>
+                <value>34501.700000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Bush Mission Pointe Library&quot;</value>
+                <value>-1746.8409640000004</value>
+                <value>33569.210000000006</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Bretford Rectangular Conference Table Tops&quot;</value>
+                <value>-1779.9888999999998</value>
+                <value>37328.409999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Bretford CR8500 Series Meeting Room Furniture&quot;</value>
+                <value>3726.1244170800001</value>
+                <value>101797.12</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Bretford CR4500 Series Slim Rectangular Table&quot;</value>
+                <value>5349.0568319999993</value>
+                <value>84024.220000000016</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;BoxOffice By Design Rectangular and Half-Moon Meeting Room Tables&quot;</value>
+                <value>-11541.176706</value>
+                <value>63825.889999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Name:nk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Profit:qk]</field>
+                  <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Furniture&quot;</value>
+                <value>&quot;Bevis 36 x 72 Conference Tables&quot;</value>
+                <value>-4512.6807410000019</value>
+                <value>38109.040000000001</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Category:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FAAA3C95-E58C-4A61-9930-CBC99C5D744B}' />
+    </window>
+    <window class='worksheet' name='TOP 10 sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ef05tc1yg3aw90zpgfwe1kop466].[none:Product Sub-Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4FE44EAB-794D-485F-8BA6-AF2B5433E5E3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      IVCRdzT/HyqnrEy2GH6XAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='TOP 10 sales' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAbDUlEQVR4nO3dR3McaZ7f8W9mlvfw3pAAvffkdLPZ3WR3j3Z2dqWVFJpQzErvQPe99UEx
+      Z+mm0E0mpAjNamJCE6PV9kw3TdMAIEECIBzhvSvvTVZl6gA26AA0QCYBNPP5XFiFynqedD/m
+      U5lZ/5J0XdcRBJOSd3sGBGE3iQAIpiYCIJiaCIBgaiIAwrpKhQyLi4uE46lNp8ulUxS1H29P
+      K+ZZWV4mmcnz8lkXVSu+NqVOIhIiFE2g7cDpGREAYV0rg3f5n/94nz/8j//KXGbj6R7+4e+Z
+      ya7/2vd3/kz+eTru//F3PBwYom9gnJfzMp5eeeU9wWed/PYfvmd4ZIxC6cXfRx/+iZnEWy7M
+      JizGNyl8EGQLB46fxfPsH3j2+D5/HB7lwuVz9Hd2ktMc/PKvf8af/nCL4Mwsl9t7yJQ3kBnu
+      ofpEHTf/9JiG/fvp+Ob/ElT9/M31C/i8Tgbngxz76iz3/vFPXPj0DHcezGILhLn34Pd8/M/+
+      lrZKFx2dQ3z5L35Nk8vK8ngvv7vXjbP5CNG735CblPl0n43u4Qn8jSeoLkwwFswglR1gvzLH
+      yHKKxuMfkeq9TbbhAPbQPNd+8Ql3H63wVzfOrb+YO7xahZ8KTeXx3e+wHvuCNkeW1lNXaZBD
+      lJ+8wcXaDA8ejVF37gbnDjaiFrJkc3likShjwxOcufELrl+9wsFjx/jq47MA7L9wnb/9qyv8
+      4X/9jkgsSUHNEk9mqN1/hC8uttLf283/++4ODpvMYiiFqhYYedqPSonR8SDHzhzm6rVPefro
+      PkWrC5dFpn8hwr/6i6vk8jnGgml+9aufM9s7REGz8NWNa5w/Wc///vtbtB5o3XAxla+//vrr
+      nVmjwk9JMZ+j5tAFLh1pRM1mUTwVNDXUMdZ9myXquPHRMYY7vyelOzh0/ACDj7pQPOWcu3KC
+      vju3iWoumj0luqfiHG6tZ7K/gztdQ7SdPE+TJ8ejoTnKKuuxpGfoGc3w+fXPOX2knZb9TfTc
+      /jMTKymq/Q7SJSu1dU0ca6uls3uQy+ePMrcYoaquiUa3yv2HfSSUcq4eKOO7e4Oc/PhnuGWJ
+      hv0t+Nwe7nf1cv3zq9gUad3llMSVYOGnaqz3Hk/Gw1z65DOaKr28vos/675LseIgR1ur33jt
+      B3smALquI0kbzaYgvB975jNAsfj66TBBeP/2TAAEYTeIAAimJgIgmJoIgGBqIgCCqYkACKYm
+      7gUSTGVwKkip9OJ2vHcOQC4VZuhxF97jX1GjLfDk6Sia1cXFMwd4cL8bi7eSy6f3ce9OJ7K3
+      mvOnGolHHaiJcfz7TlHmEBe/hJ3zm//+PclMYe35O18J1nUdwsMM6Yc4UimhlQqMPxuBEvgP
+      HiEzN0IxmsR5/CKFyQGctV7mBlaw19Rx4mAjuraaxmKxiMUiDkjC+/VvfvP7VwLwznvcy7cv
+      6IUMzyamqWs+QGZuDEUCCdA0kOXVDxyarpFMJrHX1CEBOs9DBGjaFr5ZIQgGeucApGOLPO58
+      yoISoVgpMRtMEYqlOXWwkc5b32Fxl3H55D7u3vwG2V3OxeYK2o6dpZQaZylZQ63XCqzu/OII
+      IOy0PXMznKqqWK3W3Z4N4QP363//u1eGQOI0qGBqYszxAfjtzQEy+Xe/m9ZqkfnXN04YMEc/
+      HSIAH4A/dowSTebeuR2n3WK6AIghkGBqIgCCqYkACKYmAiCYmgiAYGoiAIKpiQAIpiYCIJia
+      CIBgaiIAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYmgiAYGoiAIKpvfNXIvPpKMM9j/Ae
+      vU6jJcyDR33Y/A1cOFbL3bvdWHzVXDzRwoO7nci+Ws6eqCMetVNMTuJtOSEqwwm76p0DYHP6
+      OH6ggWdFmA+ucPLCx8RnB3g2OMuhK1fJzI0wMzDMvsufU5geJJlNszwzhxwoo8khoeu6KIz1
+      rowqbKObbxu8e2U4WUGRJdBBlyQUWcaiyKglsCoyiqyQK+q4bTK6JFPUS6wsL9NQtfrLfSVN
+      Q9d10614IxlZ2KlUKv34RB8QYyrDdfQyp0T4+EgNnfduYnFWcOl4NXdufYfV6efSyWbufvsN
+      sivApaYyDp28gJocZylZtVYZTtd1URjrLRn245oSptsG7xwAd6COq3/5q7XnTa3ta49//lX9
+      i8f/pG7tsd8LUP6uXQvCOxNngQRTEwEQTE0EQDA1EQDB1EQABFMTARBMTQRAMDURAMHURAAE
+      UxMBEExNBEAwNREAwdREAARTEwEQTE0EQDA1EQDB1EQABFMTARBMTQRAMDURAMHUDA2ArhUJ
+      B1eIp7Lo6MQjQeKpHLr+4rGmFSkUShTzWfIlIwt6CML2vXNViJctTY+yEFMp5sbZ11zL8FwU
+      uVjgWHs1feNR9JLKqVNNxMN24uFJ2k+dx64YOQeCsD2GBsDtdpOcGsPqLCMZy3Li7EmSs2Ms
+      TYQ4fPEChdEhUoUcTx50cfzaNdxWiWKxuFYYq1AoGDk7pqEbWBnug98Gr60rQwMQCUc4ePoS
+      iak+CkWFWDJPIZvD5VVIxHKohTyVFi/HTp4gsryE3lCOxbI6C6qqmq4ok1GMLIxls9kMamyP
+      em1dGfoZoKaunqn+RyTlAG1H2gkNdZORfDQcOkr8WRc5qx+f00t5bT2H6pysJFUjuxeEbTP0
+      COAMVPOzq9Vrzy989Mna4/MfXVt77LAD7DOya0F4K+I0qGBqIgCCqYkACKYmAiCYmgiAYGoi
+      AIKpiQAIpiYCIJiaCIBgaiIAgqlt4VYIjXAoQjEVIqz7ObKv7vX7iQThJ2sLAchy97suoqlJ
+      nPZm9u/7JY73P1+CsCO2EAAnLfUSfutVXBb4wG+WFUxmS58BLBadbFpF0o39VXJB2G1bOALk
+      mJhdJqdaya3kOHn+JOJbjILR1GKJPz+aMKQtv8fBz443bWnaLQ2BTh0/wjc3eznx6V+IIZDw
+      XqhFjf/0f7oNaau9odyYAJSKcb75/Z9IA2XVFSRDIUo0GfstGkHYRZvuy7Li5vKnH/O07zFq
+      0U9FheeDuXCQSOf55uG4IW01VHm5cmxr/+MIe8umAZAkC2WVPpKxFOFImGAoytFjBz6IYVAs
+      leO/fdNnSFuXjzaKAPxEbekzwMfXvyCyOE3WXoOo2yB8SDYd0WilAk96nuKSMty608lyJL1p
+      Y3qpwNCTLh71jVLUCvR23ePp6CxaqUDf88f5QoJoNEt8aZpoTpxUFXbXpgEoqUGmJ+N0fnuT
+      83/5N6QmRshvMn1wegy5qo0zR/cRnxrB2XoCJbvC/OgA1qaTkFwhkUkQXlphZDFNwCFuqhB2
+      16ZDIIutCr/le+Zo4HzAQqS+etPxfzKbZmGqj/kJO3V+P3VNLpJpD8nFBFUHPRRiLrLFPL2P
+      HnPi+g0k2LXKcKpqXE2i3a5q9yFUhjNye+j6JttjO5XhJNnGZ7/81drzax+d37TjivJKMkoZ
+      WjaC2ykxPDSBlInS1lLGSO8IejbOkfomzn30KZG5MdKV53DbdqcynJF9ybK8qxXVPoTKcEXN
+      uNGAJG2yPV7rxtBT+oHaFvKlGdSydhpqAthmp5GajlMRcLFfm0b2HMPvseG0KTTVO8ho4jOA
+      sLuMvaYlydQ0tq49rW3at+5jpxPAi9fQzgVh+z6U61qC8FZEAARTEwEQTE0EQDA1EQDB1EQA
+      BFMTARBMTXy35T3SdZ14erO7p7ZOkSW8LrshbQkviAC8R4ViiX/7m98b0lZrbYD/+O9+bkhb
+      wgtiCCSYmjgCCFvyd//5W4ZnQoa09V/+7p/ic++N4ZwIgLAlmqajGXTzor6HqkuJIZBgaiIA
+      gqntySFQKJ7h6cSKIW01Vftobyg3pC3hw7MnAzCxEOU//LbDkLb++uNDIgDChsQQSDA1EQDB
+      1EQABFMTARBMzfAPwZGpPu5OqfziQjPf3evB4i7j8ulW7n3fjeSp4OKZJmIRB/nYGBUHzlIm
+      imMJu8jQAJTyCaaiMrUBK0szy5y+9hnp2RFmB8Y58umXFCYGSOazTD8bJdC6nzKHhKZp6LqO
+      ruuUSiVgtdCUUV5u95V51d78m9F9aCXjlgPW7+P5S0Z1sXEfBl691UraG/1s3O/2bbQ91mNo
+      AIZ7ulhJSISjCTxtLVSy/mqTJAlVLb7yfKdJ4rcu9xYjN8c22jI0AIfPXaNdLdA/MsHB9lpu
+      3b6J1VvBpVMHuHv7GxRvFedbnDQfPI6emWIpWUetd7VCmyRJKMrqjy/JsnEfTV5u92U70oeh
+      hb/W7+P5S0Z1sXEfBu6hsiK/0Y8iG3e0lDZbV68xNACKxYpisXLu1AkAbnz5xdprN776au2x
+      1w1wysiuBeGtiLNAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYmgiAYGoiAIKpiQAIpiYC
+      IJiaCIBgaiIAgqmJAAimJgIgmJoIgGBqIgCCqYkACKYmAiCYmgiAYGoiAIKpGVoVIhma48nT
+      EUoWFxfPHODB/cdYvRVcPr2Pu3e6kL1VXDjdSCzioJAYp2z/aVEZTthVhgbAU9HARx9XMj4y
+      yvzEAic/+Yz03AjT/SMcuvYl6sQAiVyG+fFJXPUN7H9eGQ5ereal6++/MtxOVJ8zso8PqjKc
+      9mZlOEO3x2br6jWGBkAvpHk2MUt9ywHSs2NI0mo5JV0Hee2xTjabxfHS+tR1/bV/jZypF+2+
+      8meDO3n/fWzcnqFLYvA8b9TH6/0Y2u8G23w9hgZgfnKYqekooViK04ea6Lh1E6unjEsn93Pv
+      5jfIngouNFey/+hpSqkJlpI1a5XhNE3DYlmdHUOrtsnSWrsv22rlsC31Icnr9lEydF9afzlW
+      +zesiw37MLIynKIob/SjFI1bWZK08bp6naEBaDp8nqbDL55/+VXt2uMvfv6iMpzPA3DWyK4F
+      4a2Is0CCqYkACKYmAiCYmgiAYGoiAIKpiQAIpiYCIJiaCIBgaiIAgqmJAAimJgIgmJoIgGBq
+      IgCCqYkACKYmAiCYmgiAYGqGfiFmI5t9PU0y7OtMgrB9OxKAYmqJb+8+RXJ4uXy+hWjIQSY6
+      St3Ri5Q5dmIOBGF9OzIEis6ucOr6Fxyu8ZEs5HjW9wipfJ8oiSLsuh0JgGLRKRQ0VE3DIivU
+      1FaTTiYNrWYgCG9jRwJQ1rqf6c6bLOckvA43Nc3tNHryrCTVneheEDa0I58BZJuPT67fWHvu
+      dgIc3YmuBWFTOxKAzRSLRXRdR9M0VHX1iFBX7uLXN4796Ht1frxaTXtj+Vq7L/M4LIb1UVfp
+      XbcPXdMN68PvcazbB8A/v3qIXKH4zn1YFHnDPr4838r5gzXv3AeAReKNfiQ0w9ZVwLvxuvqX
+      1w5TUF9UjZP0nSgFtgWqqmK1Wrc8/Q+zvZ3TqNvtA1YLdm2nUFexWERRlG3N13b7KJVKSJK0
+      rfdstw9N09B1fVsFxLbbB2x/mxi9rnb9CPC2dur6gZFV6kQfe6+PPXMEEITdsOeOACO9D7HW
+      tLOvtmzd14vpCJMRlSq7hKu6Gtu79NVzn9lIDndZAyfbylFtFfgdr/4Pk82GSCQc1NR4ttFy
+      iacd9whmS/hqWjl/dN+6U01NTdHa2vr2C/DcxMAjZoJp2o4fp5RSaW2tfeX1kpolllKpKPOt
+      +/6hx/eYjZS4+NEVAs5XhyPz408ZmY3QdOA47Q0V2563bDyO4vdvaTsVcwm6Hz2haPFy9vxZ
+      nOvsnenwCvircb/jnqtlo3zf8QTl66+//vrdmjKQXmRmdp5CEaoqbPQ86GY6lKSyzEl/9yMm
+      lxPUlDlYjOWwaUXsDoWerk7CWRmXXGCov4+5SIFKn0xXZxdFm58yz8aXmiPhCK0HDpGORvC5
+      LBRtThbHhxkcGsFdUUd4epDu/mFcvnpSyyMMz0ao9ipMzS0SjqeYHx1kPlGirirwWssakXCa
+      9sNtRENRKjwyXV3dqFYvDi1BR9cTJGeAdCKK0wJJVSI0NcDAdAiPkqOruxeLp5zsyiSPB6eo
+      rK7GZtng0F8IM76icOXSSbxOGHj0hOmlMBXV5Qx1dzATLVAdcJFMq2RTEaYmplFzCXr6RwhU
+      1+OwyIRWwlRV+LF6/LhtL+1ZeobRyQSXr5ynzGNnbrSf/rEFKqoDjDzuZnRuifDiDImSHS21
+      TF9vP6rNRyYZxed1sDC/yJNbt5hM5qny2Hj86DE4A+RTEWZnZnB4y19ZruXZMTwNxzna3oCe
+      i9P98BEZXOiZIL29T8krHqy5DLLfw8zgEyaX0vhdFhZmxglnNKaGnhDOW6ku9/7orjY+NMy+
+      Mxf31s1w+dAoi2krK/PTJPMp7IH9tDjyzMSSOCuaOehJMRVfnTYSDJHL5yioGuN9TwlGI5S3
+      HiWgZ+gdHuXouSs0VW6+IvKZGGPjk8g2O9lIkFShQCwnc+5sK4sjk4Q1L1cunEBJLvBocJbo
+      0jTLi/NMRnRaa9xEMyo2RWK9yvaZRIix8RlsDifDo+OcOH+RxNwY3YMTXLxykeDUKIngLJ39
+      0/jsaeaTHi6eOkw+m0bXsvT3TxAKh3HYrJQ2G6WWCkg2B5IkI8sSzkANR+sqiGTiZHJFJocG
+      iadTRGNJZiZGqWs7RCYWxuZwoBVLgEqpkGUxliUWDL7atqYiKXZkSUIuRZmLOzi7z8+zmUVU
+      JUC130ZT2xEKqQihaIozly4Qn5tmemERUFlcSHL42HEuXT7LaN8j0vksoyOTLMxOEahtweN4
+      9b/xUqmI1WZFlhVmJsbYf/Ii+aVxZsIpTp67QGp+mshKkFB0jsGROYLTQ8wFI4RzNurLLKSy
+      JRRpayP6XAmcVmVvBWBiNsmhtmoaKjwEY2mmhnp4Oh8nYIOp4V6eTKepdL+YPptJkM1rOG1W
+      NNmKx2XHalGo9Lt43Hmf6ZUIiwvLpGJBEtl1TlOWimQyKSLRONrz9eZ0ubHYrFhtNuLzYzzs
+      GaZk8+B32fD4KnA7FeobG5BlG05FY3pimvVOuGkllUw6SSSWxO+28bDjPkndQZVH4f69++QV
+      N57KRg7V2ZkOFdHik3T2DBIMRZCtdiwSuFxOgvMzRNIplhaDRFaWyRVf++EHRzVKbITbd24z
+      E0zhcntWS4MXU0RTRVx221qZdndZDeVuG06Xi+jyPKF4FiiwvBwjF1tkKZp9tW3Fh0tb5tbt
+      O4wt5dES03T0TeD3OnE4nFjsLlw2K4qsoOcSdN7vIG914ZOy3L7TQTCZRZYzdD3owePzoct2
+      KisDWFwBasvfHFJWVNUy9PA29zsfozic9D28T7hgxaYm6eroIKM4sQA2hwe3y4avsgaHxUpD
+      fQ2KxYJFV5mYmd/SvtbeXMnt727urQ/BL89KsRhmdlamtTVAIZdgJVygsaHyjbM/mqYhSdL6
+      f5dl0F/Uz19vGl3XkSR53Rr7qz/kALIsrf2ow8tnIXRNA0lCkuXXzk3rz9tm7bUf5uf1x6tT
+      A2t9gaatztMPP7why/JqW9LqWfDXl0PXNTRNf+MMydr8vTS9JEnomob2vF1JktC0Ej+cXX+j
+      jefXaCRZRtJ1tOfr43WTk+M0NbVisSjPl//Fev3h1OXqtlr927pn8XQdTdfQdQlZltamn52Z
+      oLquBYdNeWnSF9P94Ifp15u/dTpbnX4vBUAQdtqeGgIJwk4TAdhQnoWFMADB2Wd89+1NOh4P
+      UCjkSWYKuzxvgF5ksLuD7zuekAzPsZJ+c5J8Nk1e3dqPxeXzOUram4OBvs5b3Lx1h+nl+Lrv
+      SyaTrzwPh1fI5Ta/LeNtaGqBpWAIgMXRPr69eZPByaUtv39+uJfxlRi6VqS76wGx9Oo23Fun
+      QXdYNhGkr28QyRlAy8YYGx4mp7hxkqGnt4dgUqa5oYJoLELrwVNokSkUl4dIFso89l2d9/T8
+      MyKefZw50IiemKdnIkgmV8BnK9Lb+xTN7kPOxygoVtKRCAuROLnIMqPT86TjYUIZDaeepqdv
+      EIvTS0/Hd8yt5CkrszLQ24/FW4nbbiGSyHDuzCEmRudxyBmGJpcor/ATW1lmKZwik0ngUDSG
+      BobI4KSYDTM3OUOipFDmknna24dm91EqZFien8burcS6wd0VqcgCvU+HcfiryMcWGRkZRXcE
+      UPIRenr7SWpW6qvKiS2Habt4kcaAi/mpZ4xMrVBW5iaTVcmkEthdrjfuF4rNz7CQKVHjU+jp
+      H6GuvpmFsf69dyFsJ+WzKcKhZeaSOu3lEjUtrczOLhMtxmg7fJiZqRQApWycjrt38JdX0FCM
+      MZEqZ//m94W9d8lIjsojfixWiaIErrIa8qk58r5ywuEw0+EnXD7gR7NZGX48waXPT/Ksd5ma
+      GjuJvJ98dJmc4iISDhHMDHGwuZWy6jaSi8NEczpNz0/uhmZHWFpaoLKljfu371NSFKx+D8HB
+      Ec5/8jEjQ704pRz+2n1EJkdw1Xrw1zSRCC0zsDLM5EKc6WCeGl+Omv1nsW+4x+nkUknC4WWi
+      PQM0OvLUth1iaX6UxWyJg4cOsRBZPdrk0yHu3bzJ/vZjaNEIS+NjWCobkRd6kasOULbO9TrJ
+      6sElFVienqWyuQUoEQ2HzD0ECgdDVDU047RIKA4P5QEvDqsFWVdZmFsgra4eyiXFRlVNLYqW
+      Jptf3TFSiSiqmiOayG7WxXtT1VbHyIOHDAyNkivplJdX4nI4iC0HCTS04La/+D+wvrUNr8OK
+      2+vH7fNR7vPjsFmJBENUN+/DrmhYJY25uUWc5bX4LFnGnw8vKpsO8tnnNzjRVk+gsoaDx05Q
+      F3BR19yGz/X8+q5eYmVxgYwuY7E4qCgL4HLYsLvcNLS0cfRQK65ALS01AfLJBDlVJRpPvLFM
+      oWCUupY2bBRwuHz4fT7sVgWplGduYYGcurru7e5KPvrsM9pr/UQzBdqa68ik01hcPtR0gnVG
+      cgA0lDnpWy5Q55YhHyGpB8x9FqiYzxCJp3G6PdgsMjablUKhiIJKOJ7G7fHjcdkpZFNEYkms
+      Tg/lXju5koJUymG12cgVwO3c3h2mRkknoqQLUO53oskO9GIeRdKJxJI4XC6cNgUUC1oR7HaZ
+      fL6IxSKh6wqlkoqsF4kkcrg9LhwWiMQy+P1OYtEE/ooqHFaFfD6P3b463Mum4sTTecrKy0HT
+      sdutZLNZ4sEp4gUvDQ3V2C2gKBaKqorFIhEKRbC5fDhsCg67nUI2i2SzUcgXcLucryxPIZsi
+      mirgcTuxKjIWmw21UIBSgVgqj9fnw+WwoebzKHY7sq6TikcoaBJ2pxuLoqAXC9icLl4/E6rm
+      8yg2hUymiN0qISkWkpEQ/x9WHJ9gD6kM5gAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
